@@ -56,7 +56,7 @@ public class MainActivity extends Activity implements OnQueryTextListener,OnClos
 	private EditText editText;
 	private ImageButton searchButton;
 	private LinearLayout focusView;
-
+	
 	private SimpleAdapter mSimpleAdapter;
     private Button loadmoreButton;
     private ProgressBar loadProgressBar;
