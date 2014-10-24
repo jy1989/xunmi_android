@@ -3,7 +3,6 @@ package com.egrcc.search;
 import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.HashMap;
-
 import android.app.Activity;
 import android.content.ClipData;
 import android.content.ClipboardManager;
