@@ -11,7 +11,7 @@ import java.util.regex.Pattern;
 
 public class VdiskSearchUtil {
     
-	private static final String vdiskUrl = "http://vdisk.weibo.com";
+    private static final String vdiskUrl = "http://vdisk.weibo.com";
 
     public static String ParserHtml(String url) {
         String html = "";  
@@ -46,13 +46,13 @@ public class VdiskSearchUtil {
     public static String getHtml(String[] keywords, int page) {
     	String q = new String();
     	try {
-    		q = URLEncoder.encode(keywords[0], "UTF-8");
+    	    q = URLEncoder.encode(keywords[0], "UTF-8");
             for (int i = 1; i < keywords.length; i++) {
                 q = q + "+" + URLEncoder.encode(keywords[i], "UTF-8");
             }
-		} catch (Exception e) {
-			System.out.println("遭遇了一个异常！");
-		}
+        } catch (Exception e) {
+            System.out.println("遭遇了一个异常！");
+        }
         String searchUrl = vdiskUrl + "/search/?type=&sortby=default&keyword=" + q + "&filetype=&page=" + Integer.toString(page);
         System.out.println(searchUrl);
         String html = ParserHtml(searchUrl);  

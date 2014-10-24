@@ -10,7 +10,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class GfsosoSearchUtil {
-	private static final String gfsosoUrl = "http://www.gfsoso.com";
+    private static final String gfsosoUrl = "http://www.gfsoso.com";
 
     public static String ParserHtml(String url) {
         String html = "";  
