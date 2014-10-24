@@ -35,7 +35,6 @@ import android.widget.SearchView.OnCloseListener;
 import android.widget.SearchView.OnQueryTextListener;
 import android.widget.SimpleAdapter;
 import android.widget.Toast;
-
 import com.egrcc.search.utils.GfsosoSearchUtil;
 import com.egrcc.search.utils.VdiskSearchUtil;
 import com.egrcc.search.utils.WangpanUtils;
