@@ -1,0 +1,35 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:actionBarStyle">@style/my_actionbar_style</item>
+        <item name="android:actionOverflowButtonStyle">@style/OverFlow</item>
+    </style>
+    
+    <style name="my_actionbar_style" parent="@android:style/Widget.Holo.Light.ActionBar">  
+        <item name="android:background">#0285f0</item>
+        <item name="android:icon">@drawable/ic_launcher</item>
+        <item name="android:titleTextStyle">@style/my_titletext_style</item>  
+    </style>
+    <style name="my_titletext_style" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">  
+        <item name="android:textColor">#ffffff</item>  
+        <item name="android:textSize">20sp</item>
+    </style>  
+    <style name="OverFlow" parent="@android:style/Widget.Holo.ActionButton.Overflow">
+        <item name="android:src">@drawable/overflow</item>
+    </style>
+    
+</resources>

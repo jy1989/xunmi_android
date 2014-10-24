@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background1"
+    android:orientation="vertical" >
+    
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:checked="true"
+            android:button="@null"
+            android:gravity="center"
+            android:background="@drawable/radiobutton1_background"
+            android:text="百度云"
+            android:textColor="@color/color_radiobutton"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:button="@null"
+            android:gravity="center"
+            android:background="@drawable/radiobutton2_background"
+            android:text="微盘"
+            android:textColor="@color/color_radiobutton"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+        
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:button="@null"
+            android:gravity="center"
+            android:background="@drawable/radiobutton3_background"
+            android:text="华为网盘"
+            android:textColor="@color/color_radiobutton"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+    </RadioGroup>
+      
+    <ImageView 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d7d7d7"/> 
+    
+	<ImageView
+	    android:id="@+id/searchLogo"
+	    android:layout_width="200dp"
+	    android:layout_height="100dp"
+	    android:layout_marginTop="30dp"
+	    android:layout_gravity="center_horizontal"
+	    android:src="@drawable/searchlogo"/>
+	<LinearLayout 
+	    android:id="@+id/searchLinearLayout"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp"
+	    android:orientation="horizontal">
+        
+	    <LinearLayout 
+	        android:id="@+id/focusView"
+	        android:layout_width="0px"
+	        android:layout_height="0px"
+	        android:focusable="true"
+	        android:orientation="vertical"
+	        android:focusableInTouchMode="true"/>
+	    <EditText 
+	        android:id="@+id/editText"
+	        android:layout_width="match_parent"
+	        android:layout_height="40dp"
+	        android:layout_weight="1"
+	        android:paddingLeft="5dp"
+	        android:paddingRight="1dp"
+	        android:singleLine="true"
+	        android:background="@drawable/edittext_background"/>
+	    <ImageButton 
+	        android:id="@+id/searchButton"
+	        android:layout_width="match_parent"
+	        android:layout_height="40dp"
+	        android:layout_weight="5.5"
+	        android:src="@drawable/search_b"
+	        android:background="@drawable/edittext_background"/>
+	      
+	</LinearLayout>
+		
+    <ProgressBar
+        android:id="@+id/mainProgressBar"
+        android:paddingTop="20dp"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:divider="@null"  
+        android:paddingLeft="12dp"  
+        android:paddingRight="12dp" 
+        android:dividerHeight="5dp"  
+        android:scrollbarStyle="outsideOverlay" />
+
+</LinearLayout>
