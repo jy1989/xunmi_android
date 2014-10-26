@@ -81,12 +81,10 @@ public class MainActivity extends Activity implements OnQueryTextListener,OnClos
                     if (msg.what == 0x123) {
                         count = 2;
                         String[] keywords = msg.getData().getString("KEYWORDS").split(" ");
-    					
                         String html = GfsosoSearchUtil.getHtml(keywords, 1, WangpanUtils.BAIDU_YUN);
                         resultUrl = GfsosoSearchUtil.getResultUrl(html);
                         resultContent = GfsosoSearchUtil.getResultContent(html);
                         System.out.println("GfsosoSearch");
-	
                         Bundle resultBundle = new Bundle();
                         resultBundle.putStringArrayList("RESULTURL", resultUrl);
                         resultBundle.putStringArrayList("RESULTCONTENT", resultContent);
@@ -97,12 +95,10 @@ public class MainActivity extends Activity implements OnQueryTextListener,OnClos
                     }
                     if (msg.what == 0x234) {
                         String[] keywords = msg.getData().getString("KEYWORDS").split(" ");
-    					
                         String html = GfsosoSearchUtil.getHtml(keywords, count, WangpanUtils.BAIDU_YUN);
                         resultUrl = GfsosoSearchUtil.getResultUrl(html);
                         resultContent = GfsosoSearchUtil.getResultContent(html);
                         System.out.println("GfsosoSearch");
-
                         Bundle resultBundle = new Bundle();
                         resultBundle.putStringArrayList("RESULTURL", resultUrl);
                         resultBundle.putStringArrayList("RESULTCONTENT", resultContent);
@@ -209,7 +205,7 @@ public class MainActivity extends Activity implements OnQueryTextListener,OnClos
             }
     	}
     	catch (Exception e) {
-    	  // presumably, not relevant
+    	  
     	}
 //        if(VERSION.SDK_INT >= VERSION_CODES.KITKAT) {
 //            getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
